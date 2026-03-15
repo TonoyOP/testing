@@ -1,0 +1,686 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+html, body{
+
+    width: 100%;
+    height: 100%;
+    background-color: #00030D;
+    box-sizing: border-box;
+    font-family: "Poppins";
+ 
+}
+
+
+
+
+.hero{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/HomeAsset/herobgn.webp);
+    background-size: cover;
+    background-position:right;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: relative;
+  
+}
+
+
+.hero-cont{
+   
+    width: 100%;
+    height: 100%;
+    padding: 60px 10%;
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav .navlinks a{
+
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-weight:500 ;
+}
+
+.nav .navlinks{
+
+    position: relative;
+}
+
+.nav .navlinks a::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #1F5F93;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.nav .navlinks a:hover::after{
+
+    width: 100%;
+    color: red;
+
+
+}
+
+.links{
+
+    display: flex;
+    gap: 3em;
+    position: relative;
+}
+
+.attention{
+
+ font-size: 5.3vw;
+ font-weight: 600;
+ text-transform: uppercase;
+
+}
+
+.hero-sub-text-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    position: relative;
+}
+
+.hero-sub-text-wrapper .sound-lottie{
+
+    display: flex;
+    font-weight: 500;
+    text-transform: uppercase;
+   /* align-items: center;*/
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%; /* Moves the top edge to the vertical center of the parent */
+    left: 50%; /* Moves the left edge to the horizontal center of the parent */
+    transform: translate(-50%, -50%); /
+}
+
+.soundtxt{
+
+    opacity: .5;
+    font-size: 15px;
+}
+.sbt1{
+
+    width: 350px;
+    
+}
+
+.sbt2{
+
+    width: 450px;
+    text-align: right;
+   
+}
+
+.gj{
+
+    display: none !important;
+}
+
+.uj{
+
+    position: absolute;
+}
+
+
+.sound-lottie{
+ cursor: pointer;
+}
+
+.tAp{
+
+    color: white;
+}
+
+/*PROBLEM TEXT SECTION*/
+
+.main{
+
+    width: 100%;
+    height: 1000vh;
+    padding-right: 13% ;
+    padding-left: 13% ;
+    font-size: 18px;
+    
+}
+
+.problemtxt{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.problemtxt .mainpbtext{
+
+    color: #EDEDED;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    width: 850px;
+    min-width:200px ;
+    line-height: 1.6;
+
+}
+
+.mainpbtext .word {
+  opacity: 0.2;
+}
+/*PROBLEM TEXT SECTION end*/
+/*TAP SECTION*/
+.main{
+    background-image: linear-gradient(to bottom, #000F1B, #00030D);
+}
+
+.tAp{
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: #EDEDED;
+}
+.taptop-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+}
+.taphigh{
+
+    display: flex;
+    gap: 10px;
+    font-weight:600 ;
+    align-items: center;
+    
+}
+
+.taphigh .taphtxt{
+
+    font-size:14px;
+    opacity: .4;
+}
+
+.taphead{
+
+    font-size: 2.3em;
+    
+}
+
+.taptopmain{
+
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tapsubtxt{
+
+   
+    opacity: .3;
+    font-size: .95em;
+    text-align: center;
+}
+
+.tapTop{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+.tapbtns{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    width: 38em;
+    max-width: 40em;
+}
+
+.tapbtns .btns{
+
+    color: white;
+    width: 100%;
+    background-color: #82828238;
+    padding: 18px 30px;
+    font-size: .8em;
+    border-radius: 7px;
+    text-align: center;
+    transition: all .3s;
+    border: .5px solid #00030D;
+    
+}
+
+.tapmain, .tgth{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+}
+
+.tmaintxt, .tgth{
+
+   
+    max-width: 25em;
+    opacity: .4;
+    font-weight: 400;
+    
+    
+}
+.tapbtns .btns:hover{
+
+    cursor: pointer;
+    border-color:rgba(255, 255, 255, 0.573);
+}
+
+.btnactive {
+
+    background-color:#e5e5e5 !important;
+    color: #0B0A06 !important;
+
+    border: none !important;
+}
+
+
+/*TEST CODE*/
+
+.topmainwrapper{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*JS & Animation Supporting Code*/
+
+
+/*Navbar mobile support*/
+
+.menu{
+
+    display: none;
+}
+
+.mnav{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000F1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: fixed;
+    z-index: 4;
+    right: -115% ;
+    transition: all .5s;
+    filter: drop-shadow(1px 0px 12px #000000);
+    
+}
+
+.mnav .mlinks a{
+
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: clamp(1.2em,3vw , 1.4em);
+    
+}
+.canceli img{
+
+    top: 71px;
+    right: 10%;
+    
+}
+
+.menu-active{
+ 
+    right: 0%;
+}
+
+.tgth, .mb{
+
+    display: none;
+    position: absolute;
+}
+
+.tapmainwrapper{
+
+    width: 100%;
+    height: 100%;
+
+}
+/*media queries*/
+
+/*Medium Size*/
+@media screen and (max-width: 1400px) {
+
+    .hero{
+
+    font-size: 17px;
+    
+    }
+
+    .attention{
+
+    font-size: 6vw;
+
+    }
+    
+}
+
+/*Exception Size Changes*/
+
+@media screen and (max-width: 1200px) {
+
+
+    .hero{
+
+        position: relative;
+    }
+
+    .hero-cont{
+
+        position: relative;
+    }
+
+    .attention{
+
+        position: absolute;
+        top: 50%; /* Moves the top edge to the vertical center of the parent */
+        left: 50%; /* Moves the left edge to the horizontal center of the parent */
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        font-size: 6.2vw;
+    }
+    .hero-sub-text-wrapper{
+    flex-direction: column;
+    gap: 100px;
+    
+    }
+
+    .soundtxt{
+
+    font-size: 15px;
+    }
+    .sbt1{
+
+    
+    text-align: center;
+    
+    }
+
+    .sbt2{
+
+    text-align: center;
+   
+    }
+    
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px){
+
+   .hero-sub-text-wrapper{
+
+    gap: 58px;
+   }
+}
+
+@media screen and (min-width: 484px) and (max-width: 1200px){
+
+   
+ .hero-sub-text-wrapper .sound-lottie{
+
+    top: 55%;
+ }
+}
+
+@media screen and (max-height:665px ){
+
+   
+ .hero-sub-text-wrapper{
+
+    display: none;
+ }
+}
+
+@media screen and (max-width: 1178px){
+
+    .tmaintxt{
+
+        text-align: center;
+    }
+    .tapmain{
+
+
+        gap: 50px;
+    }
+}
+
+/*1024 SIZE CHANGES*/
+
+@media screen and (max-width: 1024px){
+
+   .taphigh .taphtxt{
+
+        font-size: 14px;
+   }
+   .tapbtns .btns{
+
+   
+    font-size: .75em ;
+    
+    
+    }
+    .tapbtns{
+    gap: 4%;
+    width: 33em;
+    max-width: 33em;
+    }
+
+    .tmaintxt{
+
+        text-align: center;
+    }
+    
+}
+/*Tablet Size*/
+@media screen and (max-width: 768px){
+
+    .links{
+
+        display: none;
+    }
+
+    .soundtxt{
+
+    font-size: 15px;
+    }
+    .sbt1{
+
+    
+    text-align: center;
+    font-size: clamp(.5em, 1em, 2em);
+    /*font-size: 2.25vw;*/
+    width: 100%;
+    max-width: 400px;
+    
+    }
+
+    .sbt2{
+
+    text-align: center;
+    font-size: 2.25vw;
+    width: 100%;
+    font-size: clamp(.5em, 1em, 2em);
+   
+   
+    }
+
+    .menu{
+
+        display: block;
+    }
+
+    .attention{
+
+        font-size: clamp(2em, 3em, 5em);
+    }
+
+    .problemtxt .mainpbtext{
+
+        font-size: 1.5em;
+    }
+
+    .tapmain{
+
+        
+        gap: 16px;
+    }
+
+    .tapbtns{
+
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .main{
+
+        overflow: hidden;
+    }
+
+    .mb{
+        display: flex;
+        position: static;
+        gap: 4%;
+        
+    }
+
+    .taphtxt{
+
+        font-size: 13px !important;
+    }
+
+    .dk{
+
+        display: none;
+        position: absolute;
+    }
+
+    .tmainimg{
+
+        scale: .9;
+    }
+
+    .taphead{
+
+        font-size: 2.05em;
+    }
+
+    .tapsubtxt, .tmaintxt{
+
+        font-size: .9em;
+    }
+
+    .tmaintxt{
+
+        max-width: 28em;
+    }
+
+    .tAp{
+
+        gap: 7%;
+    }
+
+}
+
+/*Mobile Size*/
+
+@media screen and (max-width: 425px){
+    .attention{
+
+        
+        text-wrap: wrap;
+    
+    }
+
+    .sbt1{
+
+    
+    font-size: clamp(.8em, .8em, 2em);
+    
+    }
+
+    .sbt2{
+
+    font-size: clamp(.8em, .8em, 2em);
+    }
+
+    .soundtxt{
+
+    font-size: 13px;
+    }
+
+    .problemtxt .mainpbtext{
+
+        font-size: 1.2em;
+    }
+
+}
+
